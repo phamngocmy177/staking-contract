@@ -40,6 +40,10 @@ contract StakingRewards {
         return _balances[account];
     }
 
+    function totalStaked() public view returns (uint) {
+        return _totalSupply;
+    }
+
     modifier updateReward(address account) {
         rewardPerTokenStored = rewardPerToken();
         lastUpdateTime = block.timestamp;
