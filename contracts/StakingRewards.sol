@@ -5,7 +5,7 @@ contract StakingRewards {
     IERC20 public rewardsToken;
     IERC20 public stakingToken;
 
-    uint public rewardRate = 100;
+    uint public rewardRate = 1000000000; 
     uint public lastUpdateTime;
     uint public rewardPerTokenStored;
 
